@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +16,9 @@ public class InicioSesion extends AppCompatActivity implements View.OnClickListe
 
     private Button siguiente;
 
+    private EditText usuario;
+    private EditText password;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +28,9 @@ public class InicioSesion extends AppCompatActivity implements View.OnClickListe
         siguiente = findViewById(R.id.acceder);
         siguiente.setOnClickListener(this);
 
+        usuario = findViewById(R.id.usuario);
+        password = findViewById(R.id.password);
+
 
 
     }
@@ -30,6 +38,12 @@ public class InicioSesion extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         Intent acceder = new Intent(this, MainActivity.class);
-        startActivity(acceder);
+
+        if (usuario.equals("") && password.equals("")){
+            Toast.makeText(this, "Necesitas introducir datos para acceder", Toast.LENGTH_LONG).show();
+        }else{
+            startActivity(acceder);
+        }
+
     }
 }

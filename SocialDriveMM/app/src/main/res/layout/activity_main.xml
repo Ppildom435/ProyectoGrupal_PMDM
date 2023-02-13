@@ -10,6 +10,7 @@
     android:fitsSystemWindows="true"
     tools:openDrawer="start"
 
+
     tools:context=".view.MainActivity">
     
     <LinearLayout
@@ -21,8 +22,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="56dp"
-            android:background="#2195B5"
-            android:backgroundTint="@color/azul" />
+            android:background="#2195B5" />
         
         <FrameLayout
             android:layout_width="match_parent"
@@ -37,9 +37,9 @@
         android:layout_height="match_parent"
         android:id="@+id/nav_view"
         android:layout_gravity="start"
-        app:headerLayout="@layout/nav_header"
         app:menu="@menu/nav_menu"
         app:itemIconTint="@color/azul"
-        app:itemTextColor="@color/azul"/>
+        app:itemTextColor="@color/azul"
+        android:background="@color/beige_oscuro"/>
 
 </androidx.drawerlayout.widget.DrawerLayout>

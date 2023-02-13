@@ -52,8 +52,8 @@ public class Maps_Activity extends Fragment implements OnMapReadyCallback {
         mMap.addMarker(new MarkerOptions().position(radar).title("Radar"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(radar));
 
-        LatLng heli = new LatLng(37.2709008,-6.9571999);
-        mMap.addMarker(new MarkerOptions().position(heli).title("Helicoptero"));
+        LatLng heli = new LatLng(37.3335031,-5.8410213);
+        mMap.addMarker(new MarkerOptions().position(heli).title("Helicóptero"));
 
 
     }
