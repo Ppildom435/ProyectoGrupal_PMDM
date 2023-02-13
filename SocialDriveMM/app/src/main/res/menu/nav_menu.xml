@@ -7,9 +7,9 @@
         android:checkableBehavior="single">
 
         <item
-            android:id="@+id/nav_home"
-            android:icon="@drawable/nav_home"
-            android:title="Home"/>
+            android:id="@+id/nav_map"
+            android:icon="@drawable/nav_map"
+            android:title="Mapa"/>
 
         <item
             android:id="@+id/nav_info"
