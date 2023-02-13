@@ -29,7 +29,6 @@ public class Maps_Activity extends Fragment implements OnMapReadyCallback {
 
         return inflater.inflate(R.layout.fragment_maps,container,false);
 
-
     }
 
     @Override

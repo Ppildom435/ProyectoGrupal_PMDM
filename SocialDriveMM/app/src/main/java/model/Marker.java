@@ -2,24 +2,16 @@ package model;
 
 public class Marker {
 
-    private String codMarcador;
     private String nombre;
     private String ubicacion;
     private String descripcion;
+    private int imgMarcador;
 
-    public Marker(String codMarcador, String nombre, String ubicacion, String descripcion) {
-        this.codMarcador = codMarcador;
+    public Marker(String nombre, String ubicacion, String descripcion, int imgMarcador) {
         this.nombre = nombre;
         this.ubicacion = ubicacion;
         this.descripcion = descripcion;
-    }
-
-    public String getCodMarcador() {
-        return codMarcador;
-    }
-
-    public void setCodMarcador(String codMarcador) {
-        this.codMarcador = codMarcador;
+        this.imgMarcador = imgMarcador;
     }
 
     public String getNombre() {
@@ -46,10 +38,17 @@ public class Marker {
         this.descripcion = descripcion;
     }
 
+    public int getImgMarcador() {
+        return imgMarcador;
+    }
+
+    public void setImgMarcador(int imgMarcador) {
+        this.imgMarcador = imgMarcador;
+    }
+
     @Override
     public String toString() {
         return "Marker{" +
-                "codMarcador='" + codMarcador + '\'' +
                 ", nombre='" + nombre + '\'' +
                 ", ubicacion='" + ubicacion + '\'' +
                 ", descripcion='" + descripcion + '\'' +
